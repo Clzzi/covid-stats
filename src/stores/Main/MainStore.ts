@@ -10,9 +10,16 @@ class MainStore {
   async handleGetCoronaData() {
     const response = await MainRepository.getCoronaData();
     runInAction(() => {
-
       this.coronaData = response;
-    })
+    });
+  }
+
+  @action
+  async handleGetCountryCoronaData() {
+    const response = await MainRepository.getCounterCoronaData();
+    runInAction(() => {
+      this.coronaData = response;
+    });
   }
 }
 
