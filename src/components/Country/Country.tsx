@@ -7,7 +7,7 @@ const Country = () => {
   const { countryCoronaData } = store.MainStore;
   console.log(toJS(countryCoronaData));
 
-  return <div>{countryCoronaData.resulltCode}</div>;
+  return <div>{countryCoronaData.resultCode}</div>;
 };
 
 export default observer(Country);

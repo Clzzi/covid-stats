@@ -1,0 +1,25 @@
+.Card {
+  width: 330px;
+  height: 180px;
+  display: inline-block;
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  &-Title {
+    font-size: 1rem;
+    color: #adb5bd;
+  }
+  &-Content {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 15px;
+  }
+  &-Percent {
+    
+  }
+}

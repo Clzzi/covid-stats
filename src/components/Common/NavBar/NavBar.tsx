@@ -1,4 +1,4 @@
-import { Tab, Tabs, Typography, Box, AppBar } from "@material-ui/core";
+import { Tab, Tabs, AppBar } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import useStores from "hooks/useStores";
 
