@@ -1,8 +1,13 @@
-.Main {
+.Country {
   width: 100vw;
   height: 100vh;
   background-color: #e3dede;
   justify-content: center;
   text-align: center;
   align-items: center;
+  &-Title {
+    font-weight: 700;
+    font-size: 2rem;
+    
+  }
 }

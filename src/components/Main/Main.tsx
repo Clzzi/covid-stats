@@ -23,7 +23,6 @@ const Main = () => {
       <Card message="지역별 현황" content={coronaData.city4n} percent={`${coronaData.city4p}%`}/>
       <Card message="지역별 현황" content={coronaData.city5n} percent={`${coronaData.city5p}%`}/>
       <br/>
-
     </div>
   );
 };
