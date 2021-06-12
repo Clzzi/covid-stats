@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
 .Card {
   width: 330px;
   height: 180px;
@@ -11,7 +17,7 @@
   justify-content: center;
   margin: 10px;
   &-Title {
-    font-size: 1rem;
+    font-size: 1,25rem;
     color: #30A9DE;
     font-weight: 700;
   }
@@ -19,5 +25,8 @@
     font-size: 2rem;
     color: black;
     margin-bottom: 15px;
+  }
+  &-Percent {
+    font-size: 1.5rem;
   }
 }
