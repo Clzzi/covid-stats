@@ -1,6 +1,6 @@
 import { Switch, Route } from "react-router-dom";
 import MainPage from "pages/MainPage";
-import CountryPage from 'pages/CountryPage';
+import CountryPage from "pages/CountryPage";
 const App = () => {
   return (
     <Switch>

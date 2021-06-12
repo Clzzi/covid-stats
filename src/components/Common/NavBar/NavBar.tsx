@@ -1,6 +1,7 @@
 import { Tab, Tabs, AppBar } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import useStores from "hooks/useStores";
+import { observer } from "mobx-react";
 
 const NavBar = () => {
   const { store } = useStores();
@@ -15,4 +16,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default observer(NavBar);

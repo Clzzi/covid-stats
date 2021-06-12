@@ -15,10 +15,10 @@ class MainStore {
       this.coronaData = response;
     });
   }
-
+  
   @action
   async handleGetCountryCoronaData() {
-    const response = await MainRepository.getCounterCoronaData();
+    const response = await MainRepository.getCountryCoronaData();
     runInAction(() => {
       this.countryCoronaData = response;
     });
@@ -26,7 +26,9 @@ class MainStore {
 
   @action
   handlePageValue(event: any, newValue: any) {
-    this.pageValue = newValue;
+    runInAction(() => {
+      this.pageValue = newValue;
+    });
   }
 }
 

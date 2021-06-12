@@ -10,7 +10,7 @@ const CountryContainer = () => {
   const request = async () => {
     await handleGetCountryCoronaData();
   };
-
+  
   useEffect(() => {
     request();
   }, []);

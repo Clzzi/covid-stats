@@ -12,7 +12,7 @@ class MainRepository {
     }
   };
 
-  getCounterCoronaData = async () => {
+  getCountryCoronaData = async () => {
     try {
       const { data } = await axios.get(
         "https://api.corona-19.kr/korea/country/new/?serviceKey=v5W3QnydU8w7YLKJm241fFaehITzoqVB9"
