@@ -1,4 +1,4 @@
-import { action, computed, observable, runInAction } from "mobx";
+import { action, observable, runInAction } from "mobx";
 import { autobind } from "core-decorators";
 import MainRepository from "./MainRepository";
 
