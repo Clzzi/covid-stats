@@ -1,7 +1,6 @@
 import useStores from "hooks/useStores";
-import { toJS } from "mobx";
 import { observer } from "mobx-react";
-
+import { toJS } from "mobx";
 const Main = () => {
   const { store } = useStores();
   const { coronaData } = store.MainStore;

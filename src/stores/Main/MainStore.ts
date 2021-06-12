@@ -5,6 +5,8 @@ import MainRepository from "./MainRepository";
 @autobind
 class MainStore {
   @observable coronaData = {};
+  @observable countryCoronaData = {};
+  @observable pageValue = 0;
 
   @action
   async handleGetCoronaData() {
@@ -18,8 +20,13 @@ class MainStore {
   async handleGetCountryCoronaData() {
     const response = await MainRepository.getCounterCoronaData();
     runInAction(() => {
-      this.coronaData = response;
+      this.countryCoronaData = response;
     });
+  }
+
+  @action
+  handlePageValue(event: any, newValue: any) {
+    this.pageValue = newValue;
   }
 }
 

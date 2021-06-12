@@ -1,7 +1,13 @@
-import MainContainer from 'containers/MainContainer';
+import MainContainer from "containers/MainContainer";
+import NavBar from "components/Common/NavBar";
 
 const MainPage = () => {
-  return <MainContainer />;
+  return (
+    <>
+      <NavBar />
+      <MainContainer />
+    </>
+  );
 };
 
 export default MainPage;
