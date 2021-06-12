@@ -9,6 +9,7 @@ const cx = classNames.bind(style);
 const Country = () => {
   const { store } = useStores();
   const { countryCoronaData } = store.MainStore;
+
   return (
     <div className={cx("Country")}>
       <div className={cx("Country-Title")}>서울</div>
@@ -27,6 +28,7 @@ const Country = () => {
         content={`전체${countryCoronaData.seoul.death}`}
         percent={`오늘${countryCoronaData.seoul.newCase}명`}
       />
+      <br />
       <Card
         message="발생률"
         content={`${countryCoronaData.seoul.percentage}%`}
@@ -59,6 +61,8 @@ const Country = () => {
         content={`전체${countryCoronaData.daegu.death}`}
         percent={`오늘${countryCoronaData.daegu.newCase}명`}
       />
+      <br />
+
       <Card
         message="발생률"
         content={`${countryCoronaData.daegu.percentage}%`}
@@ -91,6 +95,8 @@ const Country = () => {
         content={`전체${countryCoronaData.busan.death}`}
         percent={`오늘${countryCoronaData.busan.newCase}명`}
       />
+      <br />
+
       <Card
         message="발생률"
         content={`${countryCoronaData.busan.percentage}%`}
@@ -123,6 +129,8 @@ const Country = () => {
         content={`전체${countryCoronaData.incheon.death}`}
         percent={`오늘${countryCoronaData.incheon.newCase}명`}
       />
+      <br />
+
       <Card
         message="발생률"
         content={`${countryCoronaData.incheon.percentage}%`}
@@ -155,6 +163,8 @@ const Country = () => {
         content={`전체${countryCoronaData.gwangju.death}`}
         percent={`오늘${countryCoronaData.gwangju.newCase}명`}
       />
+      <br />
+
       <Card
         message="발생률"
         content={`${countryCoronaData.gwangju.percentage}%`}

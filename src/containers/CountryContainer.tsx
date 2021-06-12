@@ -1,12 +1,12 @@
 import useStores from "hooks/useStores";
 import Country from "components/Country";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { observer } from "mobx-react";
 
 const CountryContainer = () => {
   const { store } = useStores();
   const { handleGetCountryCoronaData } = store.MainStore;
-
+  
   const request = async () => {
     await handleGetCountryCoronaData();
   };
@@ -14,7 +14,6 @@ const CountryContainer = () => {
   useEffect(() => {
     request();
   }, []);
-
 
   return <Country />;
 };

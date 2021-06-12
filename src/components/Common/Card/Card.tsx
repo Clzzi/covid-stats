@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import { observer } from "mobx-react";
 
 const style = require("./Card.scss");
 const cx = classNames.bind(style);
@@ -19,4 +20,4 @@ const Card = ({message, content, percent}: ICardPropTypes):JSX.Element => {
   );
 }
 
-export default Card;
+export default observer(Card);
