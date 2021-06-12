@@ -5,7 +5,23 @@ import MainRepository from "./MainRepository";
 @autobind
 class MainStore {
   @observable coronaData = {};
-  @observable countryCoronaData = {};
+  @observable countryCoronaData = {
+    seoul: {
+
+    },
+    busan: {
+
+    },
+    daegu: {
+
+    },
+    incheon: {
+
+    },
+    gwangju: {
+      
+    }
+  };
   @observable pageValue = 0;
 
   @action

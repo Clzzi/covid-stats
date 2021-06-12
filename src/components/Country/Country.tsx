@@ -12,8 +12,6 @@ const Country = () => {
   const { countryCoronaData } = store.MainStore;
   return (
     <div className={cx("Country")}>
-      {countryCoronaData ? (
-        <>
           <div className={cx("Country-Title")}>서울</div>
           <Card
             message="확진자"
@@ -182,10 +180,6 @@ const Country = () => {
             content={`${countryCoronaData.gwangju.newFcase}명`}
             percent="해외"
           />
-        </>
-      ) : (
-        <div> 로딩중 </div>
-      )}
     </div>
   );
 };
