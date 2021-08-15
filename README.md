@@ -1,5 +1,7 @@
 ### COVID-STATS📈
- **MobX를 사용한 프로젝트 설정과 Data Fetching을 유연하게 하고 <br/> React-MobX-Ts 스택으로 API통신을 연습하고 싶어 만들어본 코로나 통계 사이트 입니다!
+MobX를 사용한 프로젝트 설정과 Data Fetching을 유연하게 하고 <br/> React-MobX-Ts 스택으로 API통신을 연습하고 싶어 만들어본 코로나 통계 사이트 입니다!
+
+### 디자인 업데이트 됨, [링크](https://github.com/Clzzi/NextStudy) 바로가기 ```React``` ```TS``` ```Recoil``` ```NEXT``` 
 
 ### 사용 스택
 - React
